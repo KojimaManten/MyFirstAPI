@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25FB1389FAD3EEC9513845AB /* Pods_MyFirstAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC105878250B6B28E85C9168 /* Pods_MyFirstAPI.framework */; };
 		D14C941024C3FE7D005C20D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C940F24C3FE7D005C20D9 /* AppDelegate.swift */; };
 		D14C941224C3FE7D005C20D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C941124C3FE7D005C20D9 /* SceneDelegate.swift */; };
 		D14C941424C3FE7D005C20D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C941324C3FE7D005C20D9 /* ViewController.swift */; };
 		D14C941724C3FE7D005C20D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14C941524C3FE7D005C20D9 /* Main.storyboard */; };
 		D14C941924C3FE7E005C20D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14C941824C3FE7E005C20D9 /* Assets.xcassets */; };
 		D14C941C24C3FE7E005C20D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14C941A24C3FE7E005C20D9 /* LaunchScreen.storyboard */; };
+		D1D4C87C24C4014300D1E621 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C87B24C4014300D1E621 /* APIKit.framework */; };
+		D1D4C87D24C4014300D1E621 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C87B24C4014300D1E621 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1D4C88024C4015200D1E621 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C87F24C4015200D1E621 /* BrightFutures.framework */; };
+		D1D4C88124C4015200D1E621 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C87F24C4015200D1E621 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1D4C88324C4016100D1E621 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C88224C4016100D1E621 /* Kingfisher.framework */; };
+		D1D4C88424C4016100D1E621 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C88224C4016100D1E621 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1D4C88724C402CA00D1E621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1D4C88624C402CA00D1E621 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1D4C87E24C4014300D1E621 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1D4C87D24C4014300D1E621 /* APIKit.framework in Embed Frameworks */,
+				D1D4C88424C4016100D1E621 /* Kingfisher.framework in Embed Frameworks */,
+				D1D4C88124C4015200D1E621 /* BrightFutures.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D14C940C24C3FE7D005C20D9 /* MyFirstAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +48,13 @@
 		D14C941824C3FE7E005C20D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14C941B24C3FE7E005C20D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D14C941D24C3FE7E005C20D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D4C87B24C4014300D1E621 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		D1D4C87F24C4015200D1E621 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		D1D4C88224C4016100D1E621 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		D1D4C88624C402CA00D1E621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAE506C7016AD9CD24799E44 /* Pods-MyFirstAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstAPI.debug.xcconfig"; path = "Target Support Files/Pods-MyFirstAPI/Pods-MyFirstAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		EE74C0923F8D5FA8CAFD4E79 /* Pods-MyFirstAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstAPI.release.xcconfig"; path = "Target Support Files/Pods-MyFirstAPI/Pods-MyFirstAPI.release.xcconfig"; sourceTree = "<group>"; };
+		FC105878250B6B28E85C9168 /* Pods_MyFirstAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +62,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D4C87C24C4014300D1E621 /* APIKit.framework in Frameworks */,
+				D1D4C88324C4016100D1E621 /* Kingfisher.framework in Frameworks */,
+				D1D4C88024C4015200D1E621 /* BrightFutures.framework in Frameworks */,
+				25FB1389FAD3EEC9513845AB /* Pods_MyFirstAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62029E6FDD0CE370C1E91004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE506C7016AD9CD24799E44 /* Pods-MyFirstAPI.debug.xcconfig */,
+				EE74C0923F8D5FA8CAFD4E79 /* Pods-MyFirstAPI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D14C940324C3FE7D005C20D9 = {
 			isa = PBXGroup;
 			children = (
 				D14C940E24C3FE7D005C20D9 /* MyFirstAPI */,
 				D14C940D24C3FE7D005C20D9 /* Products */,
+				D1D4C87A24C4014300D1E621 /* Frameworks */,
+				62029E6FDD0CE370C1E91004 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +110,20 @@
 				D14C941824C3FE7E005C20D9 /* Assets.xcassets */,
 				D14C941A24C3FE7E005C20D9 /* LaunchScreen.storyboard */,
 				D14C941D24C3FE7E005C20D9 /* Info.plist */,
+				D1D4C88624C402CA00D1E621 /* GoogleService-Info.plist */,
 			);
 			path = MyFirstAPI;
+			sourceTree = "<group>";
+		};
+		D1D4C87A24C4014300D1E621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1D4C88224C4016100D1E621 /* Kingfisher.framework */,
+				D1D4C87F24C4015200D1E621 /* BrightFutures.framework */,
+				D1D4C87B24C4014300D1E621 /* APIKit.framework */,
+				FC105878250B6B28E85C9168 /* Pods_MyFirstAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D14C942024C3FE7E005C20D9 /* Build configuration list for PBXNativeTarget "MyFirstAPI" */;
 			buildPhases = (
+				49FF5B95B7F7EF97D6630892 /* [CP] Check Pods Manifest.lock */,
 				D14C940824C3FE7D005C20D9 /* Sources */,
 				D14C940924C3FE7D005C20D9 /* Frameworks */,
 				D14C940A24C3FE7D005C20D9 /* Resources */,
+				D1D4C87E24C4014300D1E621 /* Embed Frameworks */,
+				D1D4C88524C4017600D1E621 /* ShellScript */,
+				DEF0EE55A5939F50D486978B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +189,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14C941C24C3FE7E005C20D9 /* LaunchScreen.storyboard in Resources */,
+				D1D4C88724C402CA00D1E621 /* GoogleService-Info.plist in Resources */,
 				D14C941924C3FE7E005C20D9 /* Assets.xcassets in Resources */,
 				D14C941724C3FE7D005C20D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49FF5B95B7F7EF97D6630892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFirstAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D4C88524C4017600D1E621 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFuturs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		DEF0EE55A5939F50D486978B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstAPI/Pods-MyFirstAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstAPI/Pods-MyFirstAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFirstAPI/Pods-MyFirstAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D14C940824C3FE7D005C20D9 /* Sources */ = {
@@ -282,10 +408,15 @@
 		};
 		D14C942124C3FE7E005C20D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE506C7016AD9CD24799E44 /* Pods-MyFirstAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q7A759C5Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyFirstAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +431,15 @@
 		};
 		D14C942224C3FE7E005C20D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE74C0923F8D5FA8CAFD4E79 /* Pods-MyFirstAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q7A759C5Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyFirstAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

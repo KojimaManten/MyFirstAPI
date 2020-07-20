@@ -13,6 +13,12 @@
 		D14C941724C3FE7D005C20D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14C941524C3FE7D005C20D9 /* Main.storyboard */; };
 		D14C941924C3FE7E005C20D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14C941824C3FE7E005C20D9 /* Assets.xcassets */; };
 		D14C941C24C3FE7E005C20D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14C941A24C3FE7E005C20D9 /* LaunchScreen.storyboard */; };
+		D16F26C324C5763100B3E6F6 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F26C224C5763100B3E6F6 /* GithubAPI.swift */; };
+		D16F26C624C5784900B3E6F6 /* Informations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F26C524C5784900B3E6F6 /* Informations.swift */; };
+		D16F26CA24C579A000B3E6F6 /* FetchGithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F26C924C5799F00B3E6F6 /* FetchGithubRequest.swift */; };
+		D16F26CE24C57AEE00B3E6F6 /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F26CD24C57AEE00B3E6F6 /* DecodableDataParser.swift */; };
+		D16F26CF24C5849E00B3E6F6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C88224C4016100D1E621 /* Kingfisher.framework */; };
+		D16F26D024C5849E00B3E6F6 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D4C88224C4016100D1E621 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AB73CE24C4151C007D46E6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AB73CC24C4151C007D46E6 /* CustomTableViewCell.swift */; };
 		D1AB73CF24C4151C007D46E6 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1AB73CD24C4151C007D46E6 /* CustomTableViewCell.xib */; };
 		D1AB73D124C41F63007D46E6 /* Next.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AB73D024C41F63007D46E6 /* Next.storyboard */; };
@@ -30,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D16F26D024C5849E00B3E6F6 /* Kingfisher.framework in Embed Frameworks */,
 				D1AB73D924C4358A007D46E6 /* APIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -46,6 +53,10 @@
 		D14C941824C3FE7E005C20D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14C941B24C3FE7E005C20D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D14C941D24C3FE7E005C20D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16F26C224C5763100B3E6F6 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		D16F26C524C5784900B3E6F6 /* Informations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informations.swift; sourceTree = "<group>"; };
+		D16F26C924C5799F00B3E6F6 /* FetchGithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGithubRequest.swift; sourceTree = "<group>"; };
+		D16F26CD24C57AEE00B3E6F6 /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 		D1AB73CC24C4151C007D46E6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D1AB73CD24C4151C007D46E6 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		D1AB73D024C41F63007D46E6 /* Next.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Next.storyboard; sourceTree = "<group>"; };
@@ -66,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AB73D824C4358A007D46E6 /* APIKit.framework in Frameworks */,
+				D16F26CF24C5849E00B3E6F6 /* Kingfisher.framework in Frameworks */,
 				D1AB73D724C42084007D46E6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +115,7 @@
 		D14C940E24C3FE7D005C20D9 /* MyFirstAPI */ = {
 			isa = PBXGroup;
 			children = (
+				D16F26C724C5793100B3E6F6 /* API */,
 				D1AB73CB24C41502007D46E6 /* CustomTableViewCell */,
 				D14C940F24C3FE7D005C20D9 /* AppDelegate.swift */,
 				D14C941124C3FE7D005C20D9 /* SceneDelegate.swift */,
@@ -116,6 +129,49 @@
 				D1AB73D424C4202B007D46E6 /* NextViewController.swift */,
 			);
 			path = MyFirstAPI;
+			sourceTree = "<group>";
+		};
+		D16F26C124C575E500B3E6F6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D16F26C224C5763100B3E6F6 /* GithubAPI.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D16F26C424C5782E00B3E6F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D16F26C524C5784900B3E6F6 /* Informations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D16F26C724C5793100B3E6F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D16F26CB24C57AB600B3E6F6 /* Units */,
+				D16F26C824C5795600B3E6F6 /* GithubRequest */,
+				D16F26C124C575E500B3E6F6 /* Protocols */,
+				D16F26C424C5782E00B3E6F6 /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D16F26C824C5795600B3E6F6 /* GithubRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D16F26C924C5799F00B3E6F6 /* FetchGithubRequest.swift */,
+			);
+			path = GithubRequest;
+			sourceTree = "<group>";
+		};
+		D16F26CB24C57AB600B3E6F6 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				D16F26CD24C57AEE00B3E6F6 /* DecodableDataParser.swift */,
+			);
+			path = Units;
 			sourceTree = "<group>";
 		};
 		D1AB73CB24C41502007D46E6 /* CustomTableViewCell */ = {
@@ -244,6 +300,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -278,7 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AB73D524C4202B007D46E6 /* NextViewController.swift in Sources */,
+				D16F26CA24C579A000B3E6F6 /* FetchGithubRequest.swift in Sources */,
+				D16F26C324C5763100B3E6F6 /* GithubAPI.swift in Sources */,
+				D16F26C624C5784900B3E6F6 /* Informations.swift in Sources */,
 				D14C941424C3FE7D005C20D9 /* ViewController.swift in Sources */,
+				D16F26CE24C57AEE00B3E6F6 /* DecodableDataParser.swift in Sources */,
 				D14C941024C3FE7D005C20D9 /* AppDelegate.swift in Sources */,
 				D1AB73CE24C4151C007D46E6 /* CustomTableViewCell.swift in Sources */,
 				D14C941224C3FE7D005C20D9 /* SceneDelegate.swift in Sources */,

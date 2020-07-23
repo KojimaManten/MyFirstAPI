@@ -14,6 +14,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBAction func gestureRecognizer(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +103,9 @@ extension ViewController: UISearchBarDelegate {
                     newArray.append($0)
                 }
             })
+            informations = newArray
+            tableView.reloadData()
+            searchBar.endEditing(true)
         }
     }
 }
